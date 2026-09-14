@@ -9,7 +9,7 @@ The judges depend on this structure to review your entry — deviations may affe
 
 1. Click the **"Use this template"** button at the top of this repository
    (or **Fork** if you prefer)
-2. Name your repository: `bob-ai-hackathon-[your-team-name]`
+2. Name your repository: `bob-ai-hackathon-[your-team-name]
    (e.g., `bob-ai-hackathon-orion-squad`)
 3. Set visibility to **Public** so judges can access it
 4. Click **Create repository**
