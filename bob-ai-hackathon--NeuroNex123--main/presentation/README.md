@@ -1,30 +1,40 @@
-# Presentation
+# Hackathon Presentation
 
-Place your slide deck in this folder.
+## Drug Safety Signal Detector and Regulatory Intelligence
 
-## Accepted Formats
+**Team:** NeuroNex123
+**Track:** Sustainability
 
-  slides.pdf      ← Preferred (universally viewable)
-  slides.pptx     ← Acceptable
-  slides.key      ← Acceptable (macOS Keynote)
+### Problem
 
-Rename your file to `slides.pdf` (or `slides.pptx`) so the evaluation
-pipeline can locate it reliably.
+Drug safety information can be difficult and time-consuming to review because relevant signals may be spread across different safety reports and regulatory information.
 
-## Recommended Slide Structure (5–8 slides)
+### Solution
 
-  Slide 1: Title — Project name, team name, track
-  Slide 2: Problem — What problem? Who has it? Why does it matter?
-  Slide 3: Solution — What you built in one clear diagram or screenshot
-  Slide 4: Architecture — How the system works technically
-  Slide 5: Demo / Key Feature — Screenshot or flow of your best feature
-  Slide 6: IBM Technologies — Specifically how you used them
-  Slide 7: Results / Impact — What does success look like? Any metrics?
-  Slide 8: Team — Names, roles, what each person built
+Our lightweight MVP analyzes provided safety information, detects predefined potential adverse-event signals, and assigns a simple risk level to help prioritize information for further human review.
 
-## Tips
+### Demonstration
 
-- Keep slides visual — diagrams beat bullet points
-- One idea per slide
-- Font size minimum 24pt for readability
-- Do not paste large code blocks into slides — reference the repo instead
+The prototype allows a user to:
+
+1. Enter a drug name.
+2. Enter safety or adverse-event information.
+3. Analyze the information.
+4. View detected safety signals.
+5. View a basic risk-priority level.
+
+### Impact
+
+The concept demonstrates how simple automated screening can help organize safety information and support faster identification of information that may require additional review.
+
+### Future Scope
+
+* Integration with larger safety databases
+* Natural language processing
+* Automated regulatory data collection
+* Advanced signal scoring
+* Visualization and dashboards
+
+### Disclaimer
+
+This is a hackathon prototype for demonstration and educational purposes. It does not provide medical advice or replace professional clinical or regulatory assessment.
