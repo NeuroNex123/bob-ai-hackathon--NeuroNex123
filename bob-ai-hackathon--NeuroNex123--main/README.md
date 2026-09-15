@@ -1,121 +1,69 @@
-# 🚀 Drug Safety signal Detector and Regulatory 
+# Drug Safety Signal Detector and Regulatory Intelligence
 
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
+**Team:** NeuroNex123
+**Track:** Sustainability
 
----
+## Overview
 
-## 👥 Team
+Drug Safety Signal Detector and Regulatory Intelligence is a lightweight hackathon MVP designed to help identify and organize potential drug safety signals from safety and regulatory information.
 
-| Field | Value |
-|---|---|
-| **Team Name** | NeuroNex123 |
-| **Track** | Sustainability |
-| **Team Lead** | Prapti Patel — 24bph067@charusat.edu.in |
-| **Members** | Rudra Patel, Rutvi Patel, Saloni Patel |
+The project demonstrates how structured processing and simple signal detection can support the review and prioritization of drug safety information.
 
----
+## Problem
 
-## 🎯 Problem Statement
+Drug safety information can come from many sources and may be difficult to review efficiently. Manual analysis can require significant time and effort, especially when large amounts of information need to be screened for potentially important signals.
 
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
+## Solution
 
-Drug Safety Signal Detector and Regulatory is a system that analysis drug safety data to identify potential adverse drug reaction and emerging safety signals. It helps detect risks early and support regulatory decisions by providing evidence for monitoring warnings or further investigations. 
+Our prototype provides a simple workflow to:
 
----
+* Process drug safety information
+* Identify potential safety signals
+* Prioritize relevant findings
+* Organize regulatory intelligence
+* Present results for further human review
 
-## 💡 Solution
+## Key Features
 
-> In 2–3 sentences: What did you build? How does it solve the problem above?
+* Drug safety signal detection
+* Safety information organization
+* Basic risk prioritization
+* Regulatory intelligence
+* Simple MVP interface
+* Modular architecture
 
-We built an AI powered drug safety signal detector that analysis ADR reports to identify potential drug related safety risks and unusual patterns. 
-It prioritizes important signals and generates quick regulatory summaries helping pharmacovigilance teams detect risks earlier and make faster decisions.  
+## Technology
 
----
+The project uses lightweight web technologies and data-processing components suitable for a hackathon prototype.
 
-## ✨ Key Features
+The implementation is intentionally kept simple so that the core concept can be demonstrated clearly and extended in the future.
 
-- **Feature 1:** ADR Detection - Identifies potential adverse drug reactions from safety reports.
-- **Feature 2:** AI Signal Detection - Finds unusual patterns and emerging safety signals. 
-- **Feature 3:** Risk Prioritization - Ranks signals based on severity and potential impact
-- **Feature 4:** Real Time Alerts - Provides early warnings for high risks drug safety signals.
-- **Feature 5:** Regulatory Reports - Generates concise summaries to support regulatory review and action.
----
+## Project Structure
 
-## 🛠️ Tech Stack
-
-| Category | Technologies |
-|---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
-
----
-
-## 📁 Repository Structure
-
-```
-├── src/                  # All source code
-├── docs/                 # Written documentation
+```text
+.
+├── src/
+├── docs/
 │   ├── problem-statement.md
 │   ├── solution-overview.md
 │   ├── architecture.md
 │   └── setup-guide.md
-├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
-└── submission.yaml       # Structured submission metadata
+├── presentation/
+├── submission.yaml
+└── README.md
 ```
 
----
+## Documentation
 
-## ⚡ How to Run
+* [Problem Statement](docs/problem-statement.md)
+* [Solution Overview](docs/solution-overview.md)
+* [Architecture](docs/architecture.md)
+* [Setup Guide](docs/setup-guide.md)
 
-> **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
+## Future Improvements
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+Possible future improvements include larger regulatory datasets, advanced NLP/ML-based signal detection, automated data ingestion, improved risk scoring, and additional regulatory sources.
 
-# 2. Install dependencies
-[your install command here]
+## Disclaimer
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
-
-# 4. Run the project
-[your run command here]
-```
-
----
-
-## 🖥️ Demo
-
-| Artifact | Link |
-|---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) |
-
----
-
-## ⚠️ Known Limitations
-
-> Be honest — judges appreciate transparency over overclaiming.
-
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
-
----
-
-## 🏅 What We're Most Proud Of
-
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
-
----
+This project is a hackathon prototype intended for demonstration and educational purposes only. It is not a medical device and should not be used for clinical, medical, pharmacovigilance, or regulatory decision-making.
