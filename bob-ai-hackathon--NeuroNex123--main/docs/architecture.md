@@ -1,49 +1,62 @@
-# Architecture
+# System Architecture
 
-## System Architecture
+The prototype follows a simple modular architecture.
 
-[Describe the overall architecture of your system. Replace the Mermaid diagram below with your actual architecture.]
+## Architecture Flow
 
-```mermaid
-graph TD
-    A[User / Browser] -->|HTTP| B[Frontend - React]
-    B -->|REST API| C[Backend - FastAPI]
-    C -->|SDK| D[watsonx.ai]
-    C -->|Query| E[PostgreSQL]
-    C -->|Publish| F[Slack Webhook]
-    D -->|Inference Result| C
+```text
+Safety / Regulatory Data
+          |
+          v
+     Data Processing
+          |
+          v
+    Signal Detection
+          |
+          v
+   Risk Prioritization
+          |
+          v
+ Regulatory Intelligence
+          |
+          v
+     Results / Dashboard
 ```
 
 ## Components
 
-| Component | Technology | Responsibility |
-|---|---|---|
-| Frontend | [e.g., React 18] | [e.g., Dashboard UI, user interaction] |
-| Backend API | [e.g., FastAPI] | [e.g., Business logic, orchestration] |
-| AI / ML | [e.g., watsonx.ai] | [e.g., Anomaly scoring, classification] |
-| Database | [e.g., PostgreSQL] | [e.g., Storing pipeline events and scores] |
-| Notifications | [e.g., Slack API] | [e.g., Alerting on threshold breaches] |
+### 1. Data Input Layer
 
-## Data Flow
+Receives drug safety and regulatory information that will be analyzed by the system.
 
-[Describe how data moves through your system from input to output.]
+### 2. Data Processing Layer
 
-1. [e.g., Pipeline logs are ingested via a webhook from GitHub Actions]
-2. [e.g., Logs are preprocessed and chunked into 512-token segments]
-3. [e.g., Each chunk is sent to the watsonx.ai inference endpoint]
-4. [e.g., Anomaly scores are stored in PostgreSQL]
-5. [e.g., The React dashboard polls the API every 30 seconds to refresh]
+Cleans and structures the input information so that it can be analyzed consistently.
 
-## Security Considerations
+### 3. Signal Detection Layer
 
-[Note any security decisions relevant to the architecture — even if basic.]
+Searches the processed information for relevant safety patterns and potential adverse-event signals.
 
-- [e.g., API keys stored in environment variables, never committed to git]
-- [e.g., All API routes require a Bearer token]
-- [e.g., Database credentials rotated via IBM Secrets Manager]
+### 4. Risk Prioritization Layer
 
-## Scalability Notes
+Assigns simple priority indicators to help identify signals that may require further investigation.
 
-[Optional: how would this scale beyond the hackathon prototype?]
+### 5. Regulatory Intelligence Layer
 
-[e.g., "The FastAPI backend is stateless and could be horizontally scaled behind a load balancer. The watsonx.ai calls are the bottleneck and would benefit from request batching."]
+Organizes regulatory information associated with the detected safety signals.
+
+### 6. Presentation Layer
+
+Displays the processed information and detected signals in a simple and understandable format.
+
+## Design Principles
+
+* Modular components
+* Simple data flow
+* Easy to extend
+* Lightweight MVP implementation
+* Clear separation between detection and presentation
+
+## Limitations
+
+The prototype is not intended to replace professional pharmacovigilance or regulatory analysis. Results require human review and validation.
