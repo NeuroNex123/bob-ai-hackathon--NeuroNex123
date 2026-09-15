@@ -1,79 +1,56 @@
 # Setup Guide
 
-> **This file is read by the automated evaluation pipeline. Be precise and complete.**
-
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
-
-- [ ] [e.g., Python 3.11+]
-- [ ] [e.g., Node.js 18+]
-- [ ] [e.g., Docker Desktop]
-- [ ] [e.g., An IBM Cloud account with watsonx.ai access]
-
-## Environment Variables
-
-Copy `.env.example` to `.env` and fill in the values:
-
-```bash
-cp .env.example .env
-```
-
-| Variable | Description | Required |
-|---|---|---|
-| `WATSONX_API_KEY` | Your IBM watsonx.ai API key | Yes |
-| `WATSONX_PROJECT_ID` | Your watsonx.ai project ID | Yes |
-| `DATABASE_URL` | PostgreSQL connection string | Yes |
-| `SLACK_WEBHOOK_URL` | Slack webhook for alerts | No |
+* Git
+* A modern web browser
+* Node.js, if required by the included application
 
 ## Installation
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/[your-org]/[your-repo].git
-cd [your-repo]
-
-# 2. Install backend dependencies
-[your command — e.g.: pip install -r requirements.txt]
-
-# 3. Install frontend dependencies (if applicable)
-[your command — e.g.: cd frontend && npm install]
-
-# 4. Set up the database (if applicable)
-[your command — e.g.: python manage.py migrate]
-```
-
-## Running the Application
+Clone the repository:
 
 ```bash
-# Start the backend
-[your command — e.g.: uvicorn app.main:app --reload]
-
-# Start the frontend (in a separate terminal, if applicable)
-[your command — e.g.: cd frontend && npm run dev]
+git clone https://github.com/NeuroNex123/bob-ai-hackathon--NeuroNex123.git
+cd bob-ai-hackathon--NeuroNex123--main
 ```
 
-The application will be available at: `http://localhost:[PORT]`
-
-## Running Tests
+Install the project dependencies if a `package.json` file is present:
 
 ```bash
-[your test command — e.g.: pytest tests/ -v]
+npm install
 ```
 
-## Quick Demo (Optional)
+## Running the Project
 
-If you have a demo script or sample data to showcase the project quickly:
+If the project contains a configured development script, run:
 
 ```bash
-[e.g.: python demo/seed_demo_data.py]
-[e.g.: open http://localhost:8000/demo]
+npm run dev
 ```
+
+Otherwise, open the provided frontend files in a modern web browser.
+
+## Configuration
+
+If environment variables are required, create a `.env` file using the provided `.env.example` file and add the required configuration values.
+
+Do not commit passwords, API keys, tokens, or other secrets to the repository.
+
+## Usage
+
+1. Start the application.
+2. Provide or load drug safety information.
+3. Run the signal detection workflow.
+4. Review the identified signals.
+5. Examine the associated regulatory information.
 
 ## Troubleshooting
 
-| Issue | Solution |
-|---|---|
-| [e.g., `ModuleNotFoundError`] | [e.g., Run `pip install -r requirements.txt` again] |
-| [e.g., Database connection refused] | [e.g., Ensure PostgreSQL is running: `docker compose up db`] |
-| [e.g., watsonx.ai 401 error] | [e.g., Check `WATSONX_API_KEY` in your `.env` file] |
+If dependencies are missing, run:
+
+```bash
+npm install
+```
+
+If the application
