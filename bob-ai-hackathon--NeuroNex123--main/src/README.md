@@ -1,47 +1,28 @@
-# Source Code
+# Drug Safety Signal Detector and Regulatory Intelligence
 
-Place all your project's source code in this folder.
+## Overview
 
-## Structure Guidelines
+Drug Safety Signal Detector and Regulatory Intelligence is a lightweight system designed to help identify and organize potential drug safety signals from regulatory and drug-safety information.
 
-Organize your code logically. Here are common patterns — use whatever fits
-your project:
+The project focuses on making safety information easier to review by combining structured data processing with simple signal detection and regulatory intelligence features.
 
-### Web Application
-```
-src/
-  backend/        ← API server code
-  frontend/       ← UI code
-  shared/         ← Shared utilities/types
-```
+## Key Features
 
-### Data / AI Project
-```
-src/
-  data/           ← Data ingestion / preprocessing
-  models/         ← ML model code
-  api/            ← Serving layer
-  notebooks/      ← Jupyter notebooks (exploration)
-```
+* Drug safety signal identification
+* Structured safety information
+* Regulatory information organization
+* Basic risk/signal prioritization
+* Simple and understandable interface
+* Lightweight MVP suitable for demonstration
 
-### CLI / Script-based Tool
-```
-src/
-  cli/            ← CLI entry points
-  lib/            ← Core logic
-  utils/          ← Helpers
-```
+## Project Structure
 
-## Important Files to Include
+The `src` directory contains the main source code for the application.
 
-- `requirements.txt` or `package.json` — dependency manifest
-- `.env.example` — template for environment variables (NEVER commit `.env`)
-- Any database migration files
-- Configuration files
+## MVP Scope
 
-## What NOT to Include in src/
+This submission is intentionally kept lightweight. It demonstrates the core concept of detecting and organizing potential drug safety signals without attempting to build a production-grade medical or regulatory platform.
 
-- `.env` files with real secrets
-- Large binary files (use Git LFS or link externally)
-- `node_modules/` or `venv/` (these are in `.gitignore`)
-- Build artifacts (`dist/`, `build/`, `__pycache__/`)
+## Disclaimer
+
+This project is a hackathon prototype intended for demonstration and educational purposes only. It is not a medical device and should not be used for clinical or regulatory decision-making.
