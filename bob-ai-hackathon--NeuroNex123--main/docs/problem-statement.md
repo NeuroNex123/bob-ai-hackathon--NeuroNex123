@@ -1,21 +1,17 @@
 # Problem Statement
 
-## Background
+Drug safety information is generated from many sources, making it difficult to quickly identify important safety signals and regulatory developments.
 
-[Describe the broader context. What domain or industry does this problem belong to? What situation creates the problem?]
+Manual review of large amounts of safety and regulatory information can be time-consuming and may make it harder to prioritize potentially important signals.
 
-## The Problem
+The goal of this project is to create a lightweight system that helps organize drug safety information and identify potential safety signals for further review.
 
-[State the problem clearly and specifically. Avoid vague statements like "things are slow" — instead say "Operations teams spend an average of 45 minutes per incident diagnosing pipeline failures because logs are scattered across 6 different tools."]
+The proposed solution focuses on:
 
-## Who is Affected
+* Collecting and organizing safety-related information
+* Detecting potential drug safety signals
+* Highlighting important findings
+* Providing simple regulatory intelligence
+* Presenting results in an easy-to-understand format
 
-[Describe the specific user or persona experiencing this problem. Be concrete — not "developers" but "backend engineers managing CI/CD pipelines in enterprises with 50+ microservices."]
-
-## Why It Matters
-
-[What is the cost of this problem? Lost time? Revenue? Safety risk? Frustration? Quantify if possible.]
-
-## Why Existing Solutions Fall Short
-
-[Briefly explain what people currently do and why it doesn't fully solve the problem. This sets up why your solution is needed.]
+The system is designed as a hackathon MVP and is intended to demonstrate the concept rather than replace professional medical or regulatory review.
