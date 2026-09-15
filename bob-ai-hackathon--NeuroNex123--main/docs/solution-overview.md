@@ -1,41 +1,31 @@
 # Solution Overview
 
-## What We Built
-
-[Describe your solution in plain language. Avoid jargon — write as if explaining to a smart colleague unfamiliar with your tech stack.]
+The Drug Safety Signal Detector and Regulatory Intelligence system provides a simple workflow for reviewing drug safety information and identifying potential safety signals.
 
 ## How It Works
 
-[Explain the core mechanism step by step. A numbered list or simple flow works well here.]
+1. Safety and regulatory information is provided to the system.
+2. The information is processed and organized into structured records.
+3. Relevant safety terms and patterns are analyzed to identify potential signals.
+4. Signals are prioritized based on simple risk indicators.
+5. The results are presented in a clear format for further review.
 
-1. [Step 1: e.g., "User connects their GitHub repository via OAuth"]
-2. [Step 2: e.g., "The system ingests pipeline logs and feeds them to watsonx.ai"]
-3. [Step 3: e.g., "An anomaly score is computed and displayed on the dashboard"]
-4. [Step 4: e.g., "Alerts are sent to Slack when the score exceeds a threshold"]
+## Main Components
 
-## Architecture Diagram
+* **Data Input:** Accepts drug safety and regulatory information.
+* **Signal Detection:** Identifies potentially relevant safety patterns.
+* **Risk Prioritization:** Helps highlight higher-priority signals.
+* **Regulatory Intelligence:** Organizes relevant regulatory information.
+* **Results Interface:** Presents detected signals and supporting information.
 
-> See [`architecture.md`](architecture.md) for the detailed diagram.
+## MVP Approach
 
-[Optionally include a simple ASCII or Mermaid diagram here for quick reference.]
+The project uses a lightweight implementation focused on demonstrating the core workflow. It avoids unnecessary complexity and provides a foundation that could be extended with larger datasets, advanced machine learning models, and additional regulatory data sources.
 
-```
-[User] → [Frontend: React] → [API: FastAPI] → [watsonx.ai] → [Dashboard]
-                                    ↓
-                             [PostgreSQL DB]
-```
+## Intended Users
 
-## Key Design Decisions
+The prototype is intended for demonstration and educational purposes and can conceptually support researchers, safety analysts, and regulatory teams in reviewing drug safety information.
 
-| Decision | Rationale |
-|---|---|
-| [e.g., Used watsonx.ai for anomaly detection] | [e.g., Pre-trained models reduced time-to-value vs. building from scratch] |
-| [Decision 2] | [Rationale 2] |
-| [Decision 3] | [Rationale 3] |
+## Disclaimer
 
-## IBM Technologies Used
-
-[Explain specifically HOW you used each IBM technology — not just that you used it.]
-
-- **[IBM Tech 1, e.g., watsonx.ai]:** [How it was used — e.g., "Used the `ibm/granite-13b-instruct-v2` model via the Python SDK to classify anomaly types from log text."]
-- **[IBM Tech 2]:** [How it was used]
+The system provides informational results only. It does not provide medical advice or make final clinical or regulatory decisions.
