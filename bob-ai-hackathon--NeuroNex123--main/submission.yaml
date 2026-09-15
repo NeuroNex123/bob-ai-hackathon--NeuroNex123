@@ -3,18 +3,18 @@
 # =============================================================================
 
 team:
-  name: ""                             # REQUIRED — Enter your team name
-  track: "AI"                          # REQUIRED
+  name: "NeuroNex"                             # REQUIRED — Enter your team name
+  track: "Drug Safety Signal Detector & Regulatory Submission Readiness Checker"                          # REQUIRED
   lead:
-    name: ""                           # REQUIRED — Enter team lead name
-    email: ""                          # REQUIRED — Enter team lead email
+    name: "Prapti Patel"                           # REQUIRED — Enter team lead name
+    email: "24bph064@charusat.edu.in"                          # REQUIRED — Enter team lead email
   members:
-    - name: ""                         # REQUIRED — Team member 1
-      email: ""
-    - name: ""                         # Team member 2
-      email: ""
-    - name: ""                         # Team member 3
-      email: ""
+    - name: "Rudra Patel"                         # REQUIRED — Team member 1
+      email: "24bph067@charusat.edu.in"
+    - name: "Rutvi Patel"                         # Team member 2
+      email: "24bph069@charusat.edu.in"
+    - name: "Saloni Patel"                         # Team member 3
+      email: "24bph070@charusat.edu.in"
 
 submission:
   title: "Drug Safety Signal Detector & Regulatory Submission Readiness Checker"
